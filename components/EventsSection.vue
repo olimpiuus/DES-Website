@@ -88,8 +88,7 @@ export default {
             ohm: {
                 name: "Open Hardware Meetup",
                 logo: require("../assets/logos/ohm.png"),
-                linkTo:
-                    "https://www.meetup.com/edmontonunlimited/events/pcwlzsyfchbpb/",
+                linkTo: "https://www.meetup.com/edmontonunlimited/events/pcwlzsyfchbpb/",
                 description: ` The Open Hardware Meetup is a place where all kinds of
                         people can share an interest in the intersection of
                         hardware, software, connectivity, and user experience.
@@ -112,8 +111,7 @@ export default {
             yegTechWednesdays: {
                 name: "Edmonton Tech Wednesdays",
                 logo: require("../assets/logos/yeg-tech-wed.png"),
-                linkTo:
-                    "https://www.eventbrite.ca/e/edmonton-tech-wednesdays-tickets-662082084337",
+                linkTo: "https://www.eventbrite.ca/e/edmonton-tech-wednesdays-tickets-662082084337",
                 description: `Edmonton Tech Wednesdays is a weekly event where anyone who loves tech 
                 can mingle and connect with others in the tech sector in a casual and relaxed environment. Whether you're a developer, marketer, entrepreneur, or simply have an interest in tech, this is the perfect opportunity to network with like-minded individuals, exchange ideas, and build meaningful relationships.`,
             },
