@@ -3,14 +3,8 @@
         <TheMenu />
         <nuxt class="mb-auto pt-24 pb-4" />
         <TheFooter />
-        <Banner
-            v-if="showBanner"
-            :name="bannerName"
-            message=""
-            short-msg=""
-            link=""
-            button-text="Click Here"
-        />
+        <Banner v-if="showBanner" :name="bannerName" message="" short-msg="" link="" button-text="Click Here" />
+        <ButtonNewsletter />
     </div>
 </template>
 
@@ -18,6 +12,7 @@
 import TheFooter from "~/components/TheFooter";
 import TheMenu from "~/components/TheMenu";
 import Banner from "~/components/Banner";
+import ButtonNewsletter from "../components/ButtonNewsletter";
 
 export default {
     components: {
