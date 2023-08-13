@@ -400,7 +400,7 @@
 
 <script>
 import SignupForm from "../components/SignupForm";
-import VButton from "~/components/VButton.vue";
+import VButton from "../components/VButton.vue";
 import EventsSectionSummary from "../components/EventsSectionSummary.vue";
 import MeetupsSection from "../components/MeetupsSection.vue";
 import ResourcesSectionSummary from "../components/ResourcesSectionSummary.vue";

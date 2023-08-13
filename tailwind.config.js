@@ -13,7 +13,7 @@ function hueScale(hue = []) {
  ** Docs: https://tailwindcss.com/docs/configuration
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
-module.exports = {
+export default {
     theme: {
         screens: {
             sm: "640px",
