@@ -1,6 +1,17 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: [],
+  builder: 'webpack',
+  build:{
+    postcss: {
+        postcssOptions: {
+          plugins: {
+            tailwindcss: {},
+            autoprefixer: {},
+          },
+        },
+      },
+},
   head: {
     title: "Dev Edmonton Society",
     meta: [
@@ -17,6 +28,15 @@ export default defineNuxtConfig({
     ],
 },
 link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+buildModules: [
+    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
+    "@nuxtjs/tailwindcss",
+    // Doc: https://google-analytics.nuxtjs.org
+    "@nuxtjs/google-analytics",
+    // Doc https://pwa.nuxtjs.org/
+    "@nuxtjs/pwa",
+],
+
 components: true,
 /*
      ** PWA Settings
