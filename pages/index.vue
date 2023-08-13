@@ -405,6 +405,7 @@ import EventsSectionSummary from "../components/EventsSectionSummary.vue";
 import MeetupsSection from "../components/MeetupsSection.vue";
 import ResourcesSectionSummary from "../components/ResourcesSectionSummary.vue";
 
+
 export default {
     components: {
         VButton,

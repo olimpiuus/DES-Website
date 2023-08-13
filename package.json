@@ -19,7 +19,8 @@
     "eslint-webpack-plugin": "^4.0.1",
     "nuxt": "^3.6.5",
     "open-color": "^1.9.1",
-    "sass-loader": "^13.3.2"
+    "sass-loader": "^13.3.2",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.8.0",

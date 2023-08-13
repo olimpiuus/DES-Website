@@ -77,13 +77,14 @@ export const state = () => ({
             logo: require("../assets/logos/yeg-tech-wed.png"),
             linkTo:
                 "https://www.eventbrite.ca/e/edmonton-tech-wednesdays-tickets-662082084337",
-            description: `Edmonton Tech Wednesdays is a weekly event where anyone who loves tech 
+            description: `Edmonton Tech Wednesdays is a weekly event where anyone who loves tech
           can mingle and connect with others in the tech sector in a casual and relaxed environment. Whether you're a developer, marketer, entrepreneur, or simply have an interest in tech, this is the perfect opportunity to network with like-minded individuals, exchange ideas, and build meaningful relationships.`,
         },
     },
 });
+import { createStore } from 'vuex'
 
-export const getters = {
+export const store = createStore({
     getAllEvents: (state) => {
         return state.events;
     },
@@ -104,4 +105,8 @@ export const getters = {
 
         return allEvents;
     },
+  })
+
+export const getters = {
+
 };

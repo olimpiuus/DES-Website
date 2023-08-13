@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col justify-between min-h-screen">
         <TheMenu />
-        <NuxtPage class="mb-auto pt-24 pb-4" />
+        <nuxt class="mb-auto pt-24 pb-4" />
         <TheFooter />
         <Banner
             v-if="showBanner"
@@ -18,7 +18,6 @@
 import TheFooter from "~/components/TheFooter";
 import TheMenu from "~/components/TheMenu";
 import Banner from "~/components/Banner";
-
 
 export default {
     components: {

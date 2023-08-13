@@ -1,5 +1,8 @@
+import vuex from "./plugins/vuex";
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+
   modules: [],
   builder: 'webpack',
   build:{
@@ -46,5 +49,6 @@ components: true,
     },
     googleAnalytics: {
         id: "UA-180778341-1",
-    }
+    },
+    plugins: ['./plugins.vuex.js']
 })

@@ -34,6 +34,9 @@
 import ExternalInfoCard from "./ExternalInfoCard.vue";
 export default {
     components: { ExternalInfoCard },
+//     setup () {
+//     const store = useStore()
+//   },
     computed: {
         resources() {
             return this.$store.getters["resources/getAllResources"];

@@ -39,8 +39,12 @@
 <script>
 import ExternalInfoCard from "./ExternalInfoCard.vue";
 import ViewAll from "./ViewAll.vue";
+import { useStore } from 'vuex'
 
 export default {
+//     setup () {
+//     const store = useStore()
+//   },
     components: { ExternalInfoCard, ViewAll },
     props: {
         // Use this property to limit the number of cards displayed

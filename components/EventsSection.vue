@@ -32,9 +32,12 @@ export default {
     components: {
         ExternalInfoCard,
     },
+    setup () {
+    const store = useStore()
+  },
     computed: {
         events() {
-            return this.$store.getters["events/getAllEvents"];
+            return this.store.getLimitedEvents()
         },
     },
 };

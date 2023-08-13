@@ -52,7 +52,9 @@ export const state = () => ({
     },
 });
 
-export const getters = {
+import { createStore } from 'vuex'
+
+export const store = createStore({
     getAllResources: (state) => {
         return state.resources;
     },
@@ -73,4 +75,8 @@ export const getters = {
 
         return allResources;
     },
+})
+
+export const getters = {
+
 };
