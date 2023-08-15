@@ -17,12 +17,12 @@
             <div
                 class="mt-8 rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px"
             >
-                <ExternalInfoCard
+                <!-- <ExternalInfoCard
                     v-for="(event, index) in limitedEvents"
                     v-bind="event"
                     :key="index"
                 >
-                </ExternalInfoCard>
+                </ExternalInfoCard> -->
                 <ViewAll :card-limit="cardLimit" link-to="/all_events"
                     >View All Events</ViewAll
                 >
@@ -34,7 +34,6 @@
 <script>
 import ExternalInfoCard from "./ExternalInfoCard.vue";
 import ViewAll from "./ViewAll.vue";
-import { useStore } from 'vuex'
 
 export default {
 
@@ -54,11 +53,11 @@ export default {
     },
     computed: {
         // The limited events based on the cardLimit
-        limitedEvents() {
-            return this.$store.getters["events/getLimitedEvents"](
-                this.cardLimit
-            );
-        },
+        // limitedEvents() {
+        //     return this.$store.getters["events/getLimitedEvents"](
+        //         this.cardLimit
+        //     );
+        // },
     },
 };
 </script>

@@ -1,16 +1,14 @@
-import vuex from "./plugins/vuex";
+
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
 
-  modules: [],
+  modules: ['@nuxtjs/tailwindcss'],
   builder: 'webpack',
   build:{
     postcss: {
         postcssOptions: {
           plugins: {
-            tailwindcss: {},
-            autoprefixer: {},
           },
         },
       },
@@ -31,14 +29,6 @@ export default defineNuxtConfig({
     ],
 },
 link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-buildModules: [
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    "@nuxtjs/tailwindcss",
-    // Doc: https://google-analytics.nuxtjs.org
-    "@nuxtjs/google-analytics",
-    // Doc https://pwa.nuxtjs.org/
-    "@nuxtjs/pwa",
-],
 
 components: true,
 /*
@@ -49,6 +39,5 @@ components: true,
     },
     googleAnalytics: {
         id: "UA-180778341-1",
-    },
-    plugins: ['./plugins.vuex.js']
+    }
 })

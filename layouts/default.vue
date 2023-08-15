@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col justify-between min-h-screen">
         <TheMenu />
-        <nuxt class="mb-auto pt-24 pb-4" />
+        <NuxtPage class="mb-auto pt-24 pb-4" />
         <TheFooter />
         <Banner
             v-if="showBanner"

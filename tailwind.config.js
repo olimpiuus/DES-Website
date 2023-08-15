@@ -1,4 +1,6 @@
-const opencolor = require("open-color");
+import opencolor from 'open-color'
+// import tailwindcssAspect from '@tailwindcss/aspect-ratio'
+import tailwindcssUi from '@tailwindcss/ui'
 
 function hueScale(hue = []) {
     return hue.reduce((acc, val, idx) => {
@@ -6,6 +8,7 @@ function hueScale(hue = []) {
         return { ...acc, [key]: val };
     }, {});
 }
+
 
 /*
  ** TailwindCSS Configuration File
@@ -59,5 +62,5 @@ export default {
     },
     variants: {},
     // Remove aspect-ratio once it's got more browser support and is rolled into Tailwind proper
-    plugins: [require("@tailwindcss/ui", "@tailwindcss/aspect-ratio")],
+    plugins: []
 };

@@ -14,12 +14,12 @@
             <div
                 class="mt-8 rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px"
             >
-                <ExternalInfoCard
+                <!-- <ExternalInfoCard
                     v-for="(event, index) in events"
                     v-bind="event"
                     :key="index"
                 >
-                </ExternalInfoCard>
+                </ExternalInfoCard> -->
             </div>
         </div>
     </div>
@@ -32,13 +32,13 @@ export default {
     components: {
         ExternalInfoCard,
     },
-    setup () {
-    const store = useStore()
-  },
+//     setup () {
+//     const store = useStore()
+//   },
     computed: {
-        events() {
-            return this.store.getLimitedEvents()
-        },
+        // events() {
+        //     return this.store.getLimitedEvents()
+        // },
     },
 };
 </script>

@@ -14,7 +14,7 @@
             <div
                 class="mt-8 rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px"
             >
-                <ExternalInfoCard
+                <!-- <ExternalInfoCard
                     v-for="(resource, index) in resources"
                     :key="index"
                     :logo="resource.logo"
@@ -24,7 +24,7 @@
                     <p v-if="resource.meetingTime" class="mt-2">
                         {{ resource.meetingTime }}
                     </p>
-                </ExternalInfoCard>
+                </ExternalInfoCard> -->
             </div>
         </div>
     </div>
@@ -38,9 +38,9 @@ export default {
 //     const store = useStore()
 //   },
     computed: {
-        resources() {
-            return this.$store.getters["resources/getAllResources"];
-        },
+        // resources() {
+        //     return this.$store.getters["resources/getAllResources"];
+        // },
     },
 };
 </script>
