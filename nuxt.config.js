@@ -5,8 +5,10 @@ import svgr from 'vite-plugin-svgr'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
 
-  modules: ['@nuxtjs/tailwindcss'],
-//   builder: 'webpack',
+  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt'],
+  alias: {
+    pinia: process.env.NODE_ENV === 'production' ? '/node_modules/pinia/dist/pinia.mjs' : '/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs',
+},
   build:{
     postcss: {
         postcssOptions: {

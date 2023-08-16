@@ -55,12 +55,12 @@ export default {
     },
     computed: {
         // The limited resources based on the cardLimit
-        // limitedResources() {
-        //     // return this.$store.getters["resources/getLimitedResources"](
-        //     //     this.cardLimit,
-        //     // );
-        //     console.log(this.$store);
-        // },
+        limitedResources() {
+            // return this.$store.getters["resources/getLimitedResources"](
+            //     this.cardLimit,
+            // );
+            console.log(this.$store);
+        },
     },
 };
 </script>

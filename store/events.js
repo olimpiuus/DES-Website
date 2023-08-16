@@ -2,7 +2,7 @@ export const state = () => ({
     events: {
         gdg: {
             name: "Google Developer Groups",
-            logo: new URL("../assets/logos/gdgLogo.png", import.meta.url),
+            logo: "_nuxt/assets/logos/gdgLogo.png",
             linkTo: "https://gdg.community.dev/gdg-cloud-edmonton",
             description: ` Google Developer Groups has an Edmonton chapter! Their
                   vision is to foster an engaging and inclusive
@@ -17,7 +17,7 @@ export const state = () => ({
         },
         clc: {
             name: "Canada Learning Code",
-            logo: new URL("../assets/logos/clc.png", import.meta.url),
+            logo: "_nuxt/assets/logos/clc.png",
             linkTo: "https://www.canadalearningcode.ca/chapters/edmonton",
             description: ` Canada Learning Code designs, delivers, and partners on
                   technology education for people in Canada. They have
@@ -26,7 +26,7 @@ export const state = () => ({
         },
         rac: {
             name: "Rainforest Alberta",
-            logo: new URL("../assets/logos/rac.png", import.meta.url),
+            logo: "_nuxt/assets/logos/rac.png",
             linkTo: "https://www.rainforestab.ca/edmonton.html",
             description: ` Rainforest Alberta is an informal organization working
                   towards improving Alberta's innovation ecosystem. They
@@ -39,7 +39,7 @@ export const state = () => ({
         },
         elug: {
             name: "Edmonton Linux Users Group",
-            logo: new URL("../assets/logos/elug.png", import.meta.url),
+            logo: "_nuxt/assets/logos/elug.png",
             linkTo: "https://elug.ca",
             description: ` The Edmonton Linux User Group (ELUG) is a group of
                   enthusiasts interested in sharing knowledge of Linux and
@@ -50,7 +50,7 @@ export const state = () => ({
         },
         ohm: {
             name: "Open Hardware Meetup",
-            logo: new URL("../assets/logos/ohm.png", import.meta.url),
+            logo: "_nuxt/assets/logos/ohm.png",
             linkTo:
                 "https://www.meetup.com/edmontonunlimited/events/pcwlzsyfchbpb/",
             description: ` The Open Hardware Meetup is a place where all kinds of
@@ -64,7 +64,7 @@ export const state = () => ({
         },
         bcyeg: {
             name: "Beta City YEG",
-            logo: new URL("../assets/logos/bcyeg.png", import.meta.url),
+            logo: "_nuxt/assets/logos/bcyeg.png",
             linkTo: "https://betacity.ca/",
             description: ` Beta City YEG is Edmonton’s citizen driven meetup with a
                   mandate to connect citizens with opportunities to learn
@@ -74,7 +74,7 @@ export const state = () => ({
         },
         yegTechWednesdays: {
             name: "Edmonton Tech Wednesdays",
-            logo: new URL("../assets/logos/yeg-tech-wed.png", import.meta.url),
+            logo: "_nuxt/assets/logos/yeg-tech-wed.png",
             linkTo:
                 "https://www.eventbrite.ca/e/edmonton-tech-wednesdays-tickets-662082084337",
             description: `Edmonton Tech Wednesdays is a weekly event where anyone who loves tech

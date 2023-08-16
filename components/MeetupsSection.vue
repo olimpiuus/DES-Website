@@ -40,10 +40,7 @@ export default {
             meetups: {
                 ruby: {
                     name: "YEGrb",
-                    logo: new URL(
-                        "/assets/logos/ruby-240px.png",
-                        import.meta.url,
-                    ),
+                    logo: "_nuxt/assets/logos/ruby-240px.png",
                     linkTo: "https://yegrb.com/",
                     slack: "#meetup-ruby",
                     description: ` YEGRB is Edmonton’s local Ruby Meetup. Ruby is a
@@ -53,10 +50,7 @@ export default {
                 },
                 javascript: {
                     name: "Exchange.js",
-                    logo: new URL(
-                        "../assets/logos/JavaScript-logo-240px.png",
-                        import.meta.url,
-                    ),
+                    logo: "_nuxt/assets/logos/JavaScript-logo-240px.png",
                     linkTo: "https://exchangejs.com/",
                     slack: "#meetup-javascript",
                     description: `Exchange.js is an open community of local developers and
@@ -65,10 +59,7 @@ export default {
                 },
                 edmontonPy: {
                     name: "Edmonton.Py",
-                    logo: new URL(
-                        "../assets/logos/python-logo.svg",
-                        import.meta.url,
-                    ),
+                    logo: "_nuxt/assets/logos/python-logo.svg",
                     linkTo: "http://edmontonpy.com/",
                     slack: "#meetup-edmontonpy",
                     description: `We hope to foster a strong, supportive, and proficient
@@ -79,10 +70,7 @@ export default {
                 },
                 dotNet: {
                     name: "Edmonton .NET User Group",
-                    logo: new URL(
-                        "../assets/logos/dotNet_logo.png",
-                        import.meta.url,
-                    ),
+                    logo: "_nuxt/assets/logos/dotNet_logo.png",
                     linkTo: "http://edmug.net/",
                     slack: "#meetup-dotnet-edmug",
                     description: ` The Edmonton .NET User Group is a non-profit
@@ -91,10 +79,7 @@ export default {
                 },
                 yegRug: {
                     name: "Edmonton R User Group",
-                    logo: new URL(
-                        "../assets/logos/r-logo.svg",
-                        import.meta.url,
-                    ),
+                    logo: "_nuxt/assets/logos/r-logo.svg",
                     linkTo: "https://www.meetup.com/edmonton-r-user-group-yegrug",
                     slack: "#meetup-r",
                     description: `
@@ -105,10 +90,7 @@ export default {
                 },
                 yegwit: {
                     name: "Edmonton Women In Tech",
-                    logo: new URL(
-                        "../assets/logos/yegwit.png",
-                        import.meta.url,
-                    ),
+                    logo: "_nuxt/assets/logos/yegwit.png",
                     linkTo: "https://yegwit.com/",
                     description: ` YEGWIT aims to build a strong and safe group for women,
                         diverse genders, and allies in tech with the goal of
@@ -120,10 +102,7 @@ export default {
                 },
                 weeklydevchat: {
                     name: "Weekly Dev Chat",
-                    logo: new URL(
-                        "../assets/logos/weeklydevchat-logo.svg",
-                        import.meta.url,
-                    ),
+                    logo: "_nuxt/assets/logos/weeklydevchat-logo.svg",
                     linkTo: "https://weeklydevchat.com/",
                     description: `Weekly Dev Chat is a place to ask questions, hear
                         different view points, and get to know your fellow
