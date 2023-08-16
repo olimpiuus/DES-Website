@@ -52,9 +52,36 @@ export const state = () => ({
     },
 });
 
-import { createStore } from 'vuex'
+// import { createStore } from 'vuex'
 
-export const store = createStore({
+// export const store = createStore({
+//     getAllResources: (state) => {
+//         return state.resources;
+//     },
+//     // Used to get a limited number of resources for the home page based on the card limit
+//     getLimitedResources: (state) => (cardLimit) => {
+//         const allResources = {};
+
+//         const eventKeys = Object.keys(state.resources);
+
+//         for (
+//             let index = 0;
+//             index < cardLimit && index < eventKeys.length;
+//             index++
+//         ) {
+//             const key = eventKeys[index];
+//             allResources[key] = state.resources[key];
+//         }
+
+//         return allResources;
+//     },
+// })
+
+// export const getters = {
+
+// };
+
+export const getters = {
     getAllResources: (state) => {
         return state.resources;
     },
@@ -75,8 +102,4 @@ export const store = createStore({
 
         return allResources;
     },
-})
-
-export const getters = {
-
 };

@@ -1,10 +1,12 @@
 
 
+import svgr from 'vite-plugin-svgr'
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
 
   modules: ['@nuxtjs/tailwindcss'],
-  builder: 'webpack',
+//   builder: 'webpack',
   build:{
     postcss: {
         postcssOptions: {
@@ -29,7 +31,11 @@ export default defineNuxtConfig({
     ],
 },
 link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-
+options: {
+    vite:{
+        plugins: [svgr()],
+    }
+},
 components: true,
 /*
      ** PWA Settings

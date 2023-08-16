@@ -84,7 +84,34 @@ export const state = () => ({
 });
 import { createStore } from 'vuex'
 
-export const store = createStore({
+// export const store = createStore({
+//     getAllEvents: (state) => {
+//         return state.events;
+//     },
+//     // Used to get a limited number of events for the home page based on the card limit
+//     getLimitedEvents: (state) => (cardLimit) => {
+//         const allEvents = {};
+
+//         const eventKeys = Object.keys(state.events);
+
+//         for (
+//             let index = 0;
+//             index < cardLimit && index < eventKeys.length;
+//             index++
+//         ) {
+//             const key = eventKeys[index];
+//             allEvents[key] = state.events[key];
+//         }
+
+//         return allEvents;
+//     },
+//   })
+
+// export const getters = {
+
+// };
+
+export const getters = {
     getAllEvents: (state) => {
         return state.events;
     },
@@ -105,8 +132,4 @@ export const store = createStore({
 
         return allEvents;
     },
-  })
-
-export const getters = {
-
 };

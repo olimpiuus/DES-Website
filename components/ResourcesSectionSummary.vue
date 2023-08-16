@@ -17,7 +17,7 @@
             <div
                 class="mt-8 rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px"
             >
-                <!-- <ExternalInfoCard
+                <ExternalInfoCard
                     v-for="(resource, index) in limitedResources"
                     :key="index"
                     :logo="resource.logo"
@@ -27,7 +27,7 @@
                     <p v-if="resource.meetingTime" class="mt-2">
                         {{ resource.meetingTime }}
                     </p>
-                </ExternalInfoCard> -->
+                </ExternalInfoCard>
                 <ViewAll :card-limit="cardLimit" link-to="/all_resources"
                     >View All Resources</ViewAll
                 >
@@ -37,15 +37,15 @@
 </template>
 
 <script>
-// import ExternalInfoCard from "./ExternalInfoCard.vue";
-// import ViewAll from "./ViewAll.vue";
+import ExternalInfoCard from "./ExternalInfoCard.vue";
+import ViewAll from "./ViewAll.vue";
 // import { useStore } from "vuex";
 
 export default {
     //     setup () {
     //     const store = useStore()
     //   },
-    // components: { ExternalInfoCard, ViewAll },
+    components: { ExternalInfoCard, ViewAll },
     props: {
         // Use this property to limit the number of cards displayed
         cardLimit: {
@@ -56,9 +56,10 @@ export default {
     computed: {
         // The limited resources based on the cardLimit
         limitedResources() {
-            return this.$store.getters["resources/getLimitedResources"](
-                this.cardLimit,
-            );
+            // return this.$store.getters["resources/getLimitedResources"](
+            //     this.cardLimit,
+            // );
+            console.log(this.$store)
         },
     },
 };
