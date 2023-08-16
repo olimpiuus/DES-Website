@@ -1,23 +1,23 @@
-<template >
-    <button v-if="open" @close="open = false" class="btn-newsletters">
-        <img class="img" :src="link" alt="">
-        <button @click="close" class="btn-close"> x </button>
+<template>
+    <button v-if="open" class="btn-newsletters" @close="open = false">
+        <img class="img" :src="link" alt="" />
+        <button class="btn-close" @click="close">x</button>
     </button>
 </template>
 
 <script>
 export default {
-    methods: {
-        close() {
-            this.$emit('close')
-        }
-    },
     data: function () {
         return {
             link: require("../assets/logos/newsletter.svg"),
-            open: true
-        }
-    }
+            open: true,
+        };
+    },
+    methods: {
+        close() {
+            this.$emit("close");
+        },
+    },
 };
 </script>
 
@@ -31,14 +31,14 @@ export default {
 }
 
 :root {
-    --btn-close-size: 15px
+    --btn-close-size: 15px;
 }
 
 .btn-close {
     visibility: hidden;
     position: absolute;
-    top: calc(-1*var(--btn-close-size));
-    right: calc(-1*var(--btn-close-size));
+    top: calc(-1 * var(--btn-close-size));
+    right: calc(-1 * var(--btn-close-size));
     width: var(--btn-close-size);
     height: var(--btn-close-size);
     font-size: var(--btn-close-size);
@@ -46,7 +46,6 @@ export default {
     border-radius: 50%;
     background-color: yellow;
 }
-
 
 .img {
     width: 40px;

@@ -37,15 +37,15 @@
 </template>
 
 <script>
-import ExternalInfoCard from "./ExternalInfoCard.vue";
-import ViewAll from "./ViewAll.vue";
-import { useStore } from 'vuex'
+// import ExternalInfoCard from "./ExternalInfoCard.vue";
+// import ViewAll from "./ViewAll.vue";
+// import { useStore } from "vuex";
 
 export default {
-//     setup () {
-//     const store = useStore()
-//   },
-    components: { ExternalInfoCard, ViewAll },
+    //     setup () {
+    //     const store = useStore()
+    //   },
+    // components: { ExternalInfoCard, ViewAll },
     props: {
         // Use this property to limit the number of cards displayed
         cardLimit: {
@@ -57,7 +57,7 @@ export default {
         // The limited resources based on the cardLimit
         limitedResources() {
             return this.$store.getters["resources/getLimitedResources"](
-                this.cardLimit
+                this.cardLimit,
             );
         },
     },

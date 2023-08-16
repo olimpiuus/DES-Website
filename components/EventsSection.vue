@@ -26,15 +26,15 @@
 </template>
 
 <script>
-import ExternalInfoCard from "./ExternalInfoCard.vue";
+// import ExternalInfoCard from "./ExternalInfoCard.vue";
 
 export default {
     components: {
-        ExternalInfoCard,
+        // ExternalInfoCard,
     },
-//     setup () {
-//     const store = useStore()
-//   },
+    //     setup () {
+    //     const store = useStore()
+    //   },
     computed: {
         // events() {
         //     return this.store.getLimitedEvents()

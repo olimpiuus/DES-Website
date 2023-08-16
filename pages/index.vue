@@ -405,7 +405,6 @@ import EventsSectionSummary from "../components/EventsSectionSummary.vue";
 import MeetupsSection from "../components/MeetupsSection.vue";
 import ResourcesSectionSummary from "../components/ResourcesSectionSummary.vue";
 
-
 export default {
     components: {
         VButton,
@@ -420,8 +419,15 @@ export default {
 <style>
 .title {
     display: block;
-    font-family: "Quicksand", "Source Sans Pro", -apple-system,
-        BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    font-family:
+        "Quicksand",
+        "Source Sans Pro",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
         sans-serif;
     font-size: 100px;
     font-weight: 300;

@@ -32,16 +32,15 @@
 </template>
 
 <script>
-import ExternalInfoCard from "./ExternalInfoCard.vue";
+// import ExternalInfoCard from "./ExternalInfoCard.vue";
 import ViewAll from "./ViewAll.vue";
 
 export default {
-
-//     setup () {
-//     const store = useStore()
-//   },
+    //     setup () {
+    //     const store = useStore()
+    //   },
     components: {
-        ExternalInfoCard,
+        // ExternalInfoCard,
         ViewAll,
     },
     props: {
