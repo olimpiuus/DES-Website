@@ -14,31 +14,28 @@
             <div
                 class="mt-8 rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px"
             >
-                <!-- <ExternalInfoCard
-                    v-for="(event, index) in events"
+                <ExternalInfoCard
+                    v-for="(event, index) in store.getAllEvents"
                     v-bind="event"
                     :key="index"
                 >
-                </ExternalInfoCard> -->
+                </ExternalInfoCard>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-// import ExternalInfoCard from "./ExternalInfoCard.vue";
+import ExternalInfoCard from "./ExternalInfoCard.vue";
+import { useEventsStore } from "../store/events";
 
 export default {
     components: {
-        // ExternalInfoCard,
+        ExternalInfoCard,
     },
-    //     setup () {
-    //     const store = useStore()
-    //   },
-    computed: {
-        // events() {
-        //     return this.store.getLimitedEvents()
-        // },
+    setup() {
+        const store = useEventsStore();
+        return { store };
     },
 };
 </script>

@@ -36,7 +36,7 @@
                             </p>
                             <img
                                 class="w-64 m-auto"
-                                src="~assets/logos/Slack_RGB.svg"
+                                src="~public/assets/logos/Slack_RGB.svg"
                                 alt="slack logo"
                             />
                         </a>
@@ -74,7 +74,7 @@
                         <div class="flex-shrink-0">
                             <img
                                 class="h-48 w-full object-cover"
-                                src="~/assets/homepage/meetups-and-events.jpg"
+                                src="~/public/assets/homepage/meetups-and-events.jpg"
                                 alt="Group of people posing together at a past event"
                             />
                         </div>
@@ -115,7 +115,7 @@
                         <div class="flex-shrink-0">
                             <img
                                 class="h-48 w-full object-cover"
-                                src="~/assets/homepage/connect-community.jpg"
+                                src="~/public/assets/homepage/connect-community.jpg"
                                 alt="5 hands coming together"
                             />
                         </div>
@@ -154,7 +154,7 @@
                         <div class="flex-shrink-0">
                             <img
                                 class="h-48 w-full object-cover"
-                                src="~/assets/homepage/provide-a-platform.jpg"
+                                src="~/public/assets/homepage/provide-a-platform.jpg"
                                 alt="lego bricks in a pile"
                             />
                         </div>
@@ -214,7 +214,7 @@
                         <div class="flex-shrink-0">
                             <img
                                 class="h-48 w-full object-cover"
-                                src="~/assets/homepage/get-involved-dev.jpg"
+                                src="~/public/assets/homepage/get-involved-dev.jpg"
                                 alt="Developer sitting at a computer looking at code"
                             />
                         </div>
@@ -282,7 +282,7 @@
                         <div class="flex-shrink-0">
                             <img
                                 class="h-48 w-full object-cover"
-                                src="~/assets/homepage/get-involved-meetups.png"
+                                src="~/public/assets/homepage/get-involved-meetups.png"
                                 alt="A group of developers sitting at a table hard at work"
                             />
                         </div>

@@ -7,15 +7,14 @@ module.exports = {
     extends: [
         "plugin:vue/recommended",
         "eslint:recommended",
-        'plugin:vue/vue3-recommended',
+        "plugin:vue/vue3-recommended",
         "plugin:prettier/recommended",
     ],
     rules: {
         "vue/component-name-in-template-casing": ["error", "PascalCase"],
         "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
         "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
-        "vue/multi-word-component-names": "off"
-
+        "vue/multi-word-component-names": "off",
     },
     globals: {
         $nuxt: true,
@@ -24,5 +23,4 @@ module.exports = {
         parser: "@babel/eslint-parser",
         requireConfigFile: false,
     },
-
 };

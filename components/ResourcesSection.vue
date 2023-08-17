@@ -14,33 +14,31 @@
             <div
                 class="mt-8 rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px"
             >
-                <!-- <ExternalInfoCard
-                    v-for="(resource, index) in resources"
+                <ExternalInfoCard
+                    v-for="(resource, index) in store.getAllResources"
+                    v-bind="resource"
                     :key="index"
-                    :logo="resource.logo"
-                    :link-to="resource.linkTo"
                 >
-                    <span>{{ resource.description }}</span>
                     <p v-if="resource.meetingTime" class="mt-2">
                         {{ resource.meetingTime }}
                     </p>
-                </ExternalInfoCard> -->
+                </ExternalInfoCard>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-// import ExternalInfoCard from "./ExternalInfoCard.vue";
+import ExternalInfoCard from "./ExternalInfoCard.vue";
+import { useResourcesStore } from "../store/resources";
+
 export default {
-    // components: { ExternalInfoCard },
-    //     setup () {
-    //     const store = useStore()
-    //   },
-    computed: {
-        // resources() {
-        //     return this.$store.getters["resources/getAllResources"];
-        // },
+    components: {
+        ExternalInfoCard,
+    },
+    setup() {
+        const store = useResourcesStore();
+        return { store };
     },
 };
 </script>

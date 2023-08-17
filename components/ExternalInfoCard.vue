@@ -20,7 +20,7 @@
                 :class="`h-12 mr-6 rounded-md inline-flex p-1 object-contain ${
                     logoBg ? logoBg : null
                 }`"
-                :src="logo"
+                :src="getImageUrl(logo)"
                 :alt="`${name}-logo`"
             />
             <h3 class="text-xl font-medium pr-8">{{ name }}</h3>
@@ -73,6 +73,16 @@ export default {
         linkTo: { type: String, required: true },
         slack: { type: String, default: null },
         description: { type: String, default: "" },
+    },
+
+    setup() {
+        function getImageUrl(src) {
+            console.log(new URL(`${src}`, import.meta.url).href);
+            return new URL(`${src}`, import.meta.url).href;
+        }
+        return {
+            getImageUrl,
+        };
     },
 };
 </script>

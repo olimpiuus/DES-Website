@@ -7,7 +7,7 @@
                     <a href="https://tailwindcss.com">
                         <img
                             class="h-10"
-                            src="~/assets/logos/tailwindcss-logo.svg"
+                            src="~/public/assets/logos/tailwindcss-logo.svg"
                             alt="tailwindcss"
                         />
                     </a>
@@ -33,7 +33,7 @@
                     <a href="https://1password.com/">
                         <img
                             class="h-10"
-                            src="~/assets/logos/1P-wordmark.svg"
+                            src="~/public/assets/logos/1P-wordmark.svg"
                             alt="1 Password"
                         />
                     </a>
@@ -54,7 +54,7 @@
                     <a href="https://shortcut.com/">
                         <img
                             class="h-10"
-                            src="~/assets/logos/Shortcut_full_color.svg"
+                            src="~/public/assets/logos/Shortcut_full_color.svg"
                             alt="shortcut"
                         />
                     </a>
