@@ -1,9 +1,20 @@
+# dependencies
 node_modules
-*.log*
+
+# logs
+npm-debug.log
+
+# Nuxt build
 .nuxt
-.nitro
-.cache
-.output
-.data
-.env
+
+# Nuxt generate
 dist
+
+# Service worker
+sw.*
+
+# DS Store
+*DS_Store
+
+# Netlify
+.netlify

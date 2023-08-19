@@ -74,14 +74,5 @@ export default {
         slack: { type: String, default: null },
         description: { type: String, default: "" },
     },
-
-    // setup() {
-    //     function getImageUrl(src) {
-    //         return new URL(`${src}`, import.meta.url).href;
-    //     }
-    //     return {
-    //         getImageUrl,
-    //     };
-    // },
 };
 </script>

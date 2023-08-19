@@ -6,7 +6,7 @@
                     <NuxtLink :to="'/'">
                         <img
                             class="block h-16 w-auto"
-                            src="../public/assets/logos/DevEdmonton-Logo-Light.svg"
+                            src="/assets/logos/DevEdmonton-Logo-Light.svg"
                             alt="Dev Edmonton logo"
                         />
                     </NuxtLink>

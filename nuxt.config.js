@@ -21,18 +21,28 @@ export default defineNuxtConfig({
             },
         ],
     },
+    /*
+    ** Customize the progress-bar color
+    */
+    loading: { color: "#fff" },
+
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+
     options: {
         vite: {},
     },
+
     components: true,
+
     pwa: {
         meta: { mobileApp: false },
     },
+
     googleAnalytics: {
         id: "UA-180778341-1",
     },
+
     router: {
         base: '/app/'
-      }
+    }
 });
