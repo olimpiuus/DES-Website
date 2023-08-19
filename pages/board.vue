@@ -1,6 +1,10 @@
 <template>
     <div class="max-w-7xl mx-auto spx-6 px-6 lg:px-8 text-lg">
-        <h1 class="text-2xl font-bold py-4">Dev Edmonton Society Board</h1>
+        <h1
+            class="py-4 text-3xl leading-9 tracking-tight font-extrabold text-gray-900 sm:text-4xl sm:leading-10"
+        >
+            Dev Edmonton Society Board
+        </h1>
         <ol>
             <li>
                 <h2 class="text-xl font-bold py-2 border-b border-lightgrey">
@@ -154,6 +158,18 @@ export default {
                     linkedInAccount:
                         "https://www.linkedin.com/in/salma-ibrahim-a1275817a/",
                     slackAccount: "Salma Ibrahim",
+                },
+                {
+                    id: 8,
+                    name: "Justice Hemming",
+                    title: "Member At Large",
+                    imageLink: require("~/assets/boardPictures/justiceHemming.jpg"),
+                    description:
+                        "Justice Hemming is an emerging Junior Web Developer, completed his Web Design and Development degree at NAIT in 2023. He has been active in the community by running events for the Junior Devs group, and looks to continue to help build a community that everyone feels welcome in by getting involved with DES.<br /><br />When it comes to building websites, Justice is more of a jack of all trades focusing on both Front End and Back End development, he loves the aspect of how coding is ever changing with there always being more to learn.<br /><br />When Justice isn’t coding you will still find Justice probably not far from the computer, gaming with friends, or taking on his passion for cooking and baking. His favorite thing to bake is mini cherry cheesecake.",
+                    twitterHandle: "",
+                    linkedInAccount:
+                        "https://www.linkedin.com/in/justice-hemming-ab459559/",
+                    slackAccount: "Justice Hemming",
                 },
             ],
         };
