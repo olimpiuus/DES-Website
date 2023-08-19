@@ -40,9 +40,5 @@ export default defineNuxtConfig({
 
     googleAnalytics: {
         id: "UA-180778341-1",
-    },
-
-    router: {
-        base: '/app/'
     }
 });
